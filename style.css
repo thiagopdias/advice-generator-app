@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    /* Primary Color */
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+
+    /* Neutral Color */
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--DarkBlue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section {
+    max-width: 50rem;
+    margin-inline: 2rem;
+
+    position: relative;
+}
+
+#cardAdvice {
+    padding: 2.4rem;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#cardAdvice h2 {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: var(--NeonGreen);
+}
+
+#cardAdvice p {
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--LightCyan);
+}
+
+#cardAdvice > img {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+#buttonGenerator {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding: 1rem;
+
+    background-color: var(--NeonGreen);
+    border: none;
+
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}
+
+#buttonGenerator:hover {
+    box-shadow: 0 0 20px var(--NeonGreen);
+}
+
+#buttonGenerator > img {
+    
+    display: block;
+    margin: auto;
+}
+
+.footer { 
+    font-size: 1.1rem; 
+    text-align: center;  
+    margin-top: 6rem;
+    margin-inline: 2rem;
+}
+
+.footer a { 
+    color: var(--NeonGreen); 
+}
